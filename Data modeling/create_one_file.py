@@ -38,11 +38,6 @@ for f in file_path_list:
             #print(line)
             full_data_rows_list.append(line) 
             
-# uncomment the code below if you would like to get total number of rows 
-print(len(full_data_rows_list))
-# uncomment the code below if you would like to check to see what the list of event data rows will look like
-#print(full_data_rows_list[0])
-
 # creating a smaller event data csv file called event_datafile_full csv that will be used to insert data into the \
 # Apache Cassandra tables
 csv.register_dialect('myDialect', quoting=csv.QUOTE_ALL, skipinitialspace=True)
